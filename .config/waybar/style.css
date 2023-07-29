@@ -1,0 +1,126 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+    color: #cad3f5;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cad3f5;
+}
+
+tooltip {
+    background: #24273a;
+    opacity: 0.8;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #181926;
+}
+
+tooltip label {
+    color: #cad3f5;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #cad3f5;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #b7bdf8;
+}
+
+#workspaces button.focused {
+    color: #cad3f5;
+}
+
+#workspaces button.urgent {
+    color: #cad3f5;
+}
+
+#workspaces button:hover {
+    background-color: #181926;
+    border-radius: 10px;
+    color: #b7bdf8;
+}
+
+#custom-weather,
+#window,
+#clock,
+#disk,
+#pulseaudio,
+#network,
+#workspaces,
+#backlight {
+    background: #24273a;
+    opacity: 100;
+    padding: 0 10px;
+    margin: 10px 0 3px;
+    border: 0;
+}
+
+/* close to left */
+#temperature, /*close to the right */
+#custom-light_dark {
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px
+}
+#temperature.critical {
+    margin-left: 10px;
+    color: #b7bdf8;
+}
+
+#workspaces {
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #cad3f5;
+    border-radius: 10px;
+    margin-left: 10px;
+    border-right: 0;
+    margin-right: 10px;
+}
+
+#pulseaudio {
+    color: #cad3f5;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+#pulseaudio.microphone {
+    color: #cad3f5;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+}
+
+#custom-weather {
+    color: #cad3f5;
+    border-radius: 10px;
+    border-right: 0;
+    margin-left: 10px;
+}
+
+#disk {
+    color: #cad3f5;
+    border-radius: 10px;
+    background-color: #24273a;
+}

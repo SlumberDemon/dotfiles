@@ -1,0 +1,101 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 20,
+    "modules-left": [
+        "custom/weather",
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "disk",
+        "clock"
+    ],
+    "include": [
+        "~/.config/HyprV/waybar/conf/mesu.jsonc"
+    ],
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        },
+        "format": "{icon}",
+        "format-icons": {
+            "1": "•",
+            "2": "•",
+            "3": "•",
+            "4": "•",
+            "5": "•",
+            "6": "•",
+            "7": "•",
+            "8": "•",
+            "9": "•",
+            "10": "•"
+        }
+    },
+    "disk": {
+        "interval": 30,
+        "format": "󰋊",
+        "path": "/",
+        "format-alt-click": "click-right",
+        "format-alt": "󰋊 {percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "HDD - {used} used out of {total} on {path} ({percentage_used}%)",
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --inc",
+        "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --dec",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "  Muted",
+        "on-click": "~/.config/HyprV/waybar/scripts/volume --toggle-mic",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "~/.config/HyprV/waybar/scripts/volume --mic-inc",
+        "on-scroll-down": "~/.config/HyprV/waybar/scripts/volume --mic-dec",
+        "scroll-step": 5
+    }
+}

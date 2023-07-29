@@ -4,6 +4,10 @@
 
 Some features require scripts from: https://github.com/SolDoesTech/HyprV4/tree/main/HyprV
 
+## Sets
+1. [Purple Cat](https://github.com/SlumberDemon/dotfiles/tree/set-1)
+
+##
 <table align="center">
    <tr>
       <th align="center">

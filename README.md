@@ -1,4 +1,4 @@
-# dotfiles
+# Purple Cat
 
 > Theme built around Catppuccin Macchiato Lavender
 

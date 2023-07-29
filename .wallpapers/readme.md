@@ -1,3 +1,9 @@
+## Using
+
+```
+cp -f path_to_image /usr/share/sddm/themes/sdt/wallpaper.jpg
+```
+
 #### Credits
 
 ##### Dark

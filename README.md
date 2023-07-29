@@ -13,7 +13,9 @@ Some features require scripts from: https://github.com/SolDoesTech/HyprV4/tree/m
    <tr>
       <td align="center">
 
-      Some configs in [hyprland.conf](https://github.com/SlumberDemon/dotfiles/tree/main/.config/hypr/hyprland.conf) are specifically set for my monitor and may not work on yours!
+      Some configs in  .config/hypr/hyprland.conf are 
+      specifically set for my monitor and 
+      may not work on yours!
      
    </tr>
    </table>

@@ -1,3 +1,3 @@
 # dots
 
-![Showcase](https://streamable.com/1rvumw)
+![Showcase](https://streamable.com/e/1rvumw?nocontrols=1)

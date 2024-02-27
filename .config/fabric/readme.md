@@ -1,12 +1,10 @@
 # Hyprland config
 
-For the blur transparency to work in `.config/hypr/hyprland.conf` add the following
-
 ```
-layerrule = blur, rofi
-layerrule = ignorezero 0.4, rofi
+layerrule = blur, fabric
+layerrule = ignorezero 0.4, fabric
 ```
 
-# Fabric
+# Install
 
 The aur package is out of date please build from source

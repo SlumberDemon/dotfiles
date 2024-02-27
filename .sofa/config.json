@@ -3,11 +3,11 @@
     "wallpath": "Pictures",
     "templates": [
         {"name": "hyprland", "path": ".config/hypr/colors.conf", "type": "argb"},
-        {"name": "gtklock", "path": ".config/gtklock/style.css", "type": "hex"},
         {"name": "fabric-css", "path": ".config/fabric/css/colors.css", "type": "hex"}
     ],
     "temporary": [
         {"name": "fabric-py", "path": ".config/fabric/utils/colors.py", "type": "rgb", "actions": ["pkill -f 'python3 .config/fabric/main.py'", "python3 .config/fabric/main.py & disown %1"]},
-        {"name": "ags", "path": ".config/ags/colors.css", "type": "hex", "actions": ["ags -q", "ags & disown %1"]}
+        {"name": "ags", "path": ".config/ags/colors.css", "type": "hex", "actions": ["ags -q", "ags & disown %1"]},
+        {"name": "gtklock", "path": ".config/gtklock/style.css", "type": "hex"}
     ]
 }

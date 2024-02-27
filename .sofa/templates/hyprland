@@ -1,0 +1,4 @@
+general {
+    col.active_border = {primaryContainer} 45deg
+    col.inactive_border = {secondaryContainer}
+}

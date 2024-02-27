@@ -72,5 +72,4 @@ class slideAnimationRight(Box):
             },
         )
 
-        self.add(self.led)
         self.add(self.revealer)

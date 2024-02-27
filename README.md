@@ -1,1 +1,3 @@
-# Wip
+# dots
+
+![Showcase](showcase.mp4)

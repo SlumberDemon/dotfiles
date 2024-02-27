@@ -44,5 +44,4 @@ class slideAnimationLeft(Box):
             },
         )
 
-        self.add(self.profile)
         self.add(self.revealer)

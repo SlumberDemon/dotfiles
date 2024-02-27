@@ -1,3 +1,4 @@
 # dots
 
-![Showcase](https://streamable.com/e/1rvumw?nocontrols=1)
+![Bar](screenshots/image.png)
+![Bar with side panels open](screenshots/image-1.png)

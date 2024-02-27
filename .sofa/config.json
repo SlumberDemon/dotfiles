@@ -2,7 +2,7 @@
     "mode": "dark",
     "wallpath": "Pictures",
     "templates": [
-        {"name": "hyprland", "path": ".config/hypr/colors.conf", "type": "argb"},
+        {"name": "hyprland", "path": ".config/hypr/hyprland/colors.conf", "type": "argb"},
         {"name": "fabric-css", "path": ".config/fabric/css/colors.css", "type": "hex"}
     ],
     "temporary": [

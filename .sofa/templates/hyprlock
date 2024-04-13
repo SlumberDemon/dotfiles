@@ -1,0 +1,5 @@
+$border = rgba{background}, 0.1)
+$background = rgba{background}, 0.6)
+$onBackground = rgba{onBackground}, 1)
+$surface = rgba{surface}, 0.2)
+$inverseOnSurface = rgba{inverseOnSurface}, 1)

@@ -1,27 +1,30 @@
-# Hyprland config
+## Hyprland
+
+Add these layer rules to your hyprland config.
 
 ```
-layerrule = blur, fabric
-layerrule = ignorezero 0.4, fabric
+layerrule = blur, bar
+layerrule = ignorealpha 0.4, bar
+
+layerrule = blur, side-*
+layerrule = ignorealpha 0.4, side-*
 ```
 
-# Install
+## Customize
 
-The aur package for fabric is out of date please build from source
-> https://github.com/Fabric-Development/fabric
+- Add your own profile picture by changing the asset in `assets/profile.png`. 
 
-# Sofa 
+- Change the logo by adding an SVG in `assets` and then updating `widgets/bar/_logo.py` line 5.
 
-Some features require the sofa cli to work
-> https://github.com/slumberdemon/sofa
+## Requirements
 
-# Css
+- [fabric](https://github.com/Fabric-Development/fabric)
+- psutil 
+- wofi
 
-If you don't have the code in `.config/fabric` you will need to update the import line in `css/main.css`
+## Todo
 
-```css
-@import url('{your-path-here}/css/colors.css');
-```
-
-# Known issues
-- Bar colours updating only after opening an app, etc (issue with hyprland blur)
+- [ ] Dark mode
+- [ ] Left side
+- [ ] Right side
+- [ ] Globe functionality

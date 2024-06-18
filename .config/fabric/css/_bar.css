@@ -1,0 +1,99 @@
+#bar-center {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 10px;
+    padding: 6px;
+    background-color: alpha(@background, 0.6);
+    color: @font;
+}
+
+#center-datetime {
+    font-size: 16px;
+}
+
+#center-indicator {
+    border-radius: 100%;
+    min-width: 6px;
+    min-height: 6px;
+    margin: 8px 3px 8px 6px;
+}
+
+#center-tlcontainer {
+    margin: 0px 3px 0px 3px;
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 4px 9px 4px 9px;
+    border-radius: 6px;
+}
+
+#center-globe {
+    margin: 0px 3px 0px 3px;
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 4px 9px 4px 9px;
+    border-radius: 6px;
+}
+
+#center-logo {
+    margin: 0px 3px 0px 3px;
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 5px 9px 5px 9px;
+    border-radius: 6px;
+}
+
+#center-minimap {
+    background-color: alpha(@background-secondary, 0.2);
+    min-width: 128px;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+
+#center-workspace {
+    margin-left: 4px;
+}
+
+#center-pwcontainer {
+    margin-right: 3px;
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 0px 8px 0px 0px;
+    border-radius: 6px;
+}
+
+#center-profile {
+    background-image: url("../assets/profile.png");
+    background-size: 100%;
+    border-radius: 8px;
+    padding: 0px 15px 0px 15px;
+    margin-right: 4px;
+}
+
+#right-battery {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 10px;
+    padding: 6px;
+    background-color: alpha(@background, 0.6);
+    color: @font;
+    margin-left: 4px;
+}
+
+#right-battery-details {
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 4px 9px 4px 9px;
+    border-radius: 6px;
+}
+
+#left-tray {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 10px;
+    padding: 6px;
+    background-color: alpha(@background, 0.6);
+    color: @onBackground;
+    margin-right: 4px;
+}
+
+#left-tray-details {
+    background-color: alpha(@background-secondary, 0.2);
+    padding: 4px 9px 4px 9px;
+    border-radius: 6px;
+}
+
+#left-tray-details > button {
+    margin: 0px 4px 0px 4px;
+}

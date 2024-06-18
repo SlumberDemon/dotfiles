@@ -1,0 +1,34 @@
+menu {
+    border: solid 2px;
+    border-color: alpha(@background, 0.2);
+    border-radius: 10px;
+    color: @font;
+}
+
+menu > menuitem {
+    background-color: @background-secondary;
+    padding: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+menu > menuitem:first-child {
+    margin-top: 1.5px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+menu > menuitem:last-child {
+    margin-bottom: 1.5px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+menu > menuitem:hover {
+    background-color: @background-tertiary;
+}
+
+tooltip {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 10px;
+    background-color: @background-secondary;
+    color: @font;
+}

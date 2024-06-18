@@ -1,0 +1,45 @@
+@import url('/home/sofa/.config/wofi/styles/color.css');
+
+* {
+    all: unset;
+    color: @all;
+}
+
+window {
+    border-radius: 0.5rem;
+    background-color: alpha(@window, 0.9);
+    border: 1px solid @window-border;
+}
+
+#input {
+    margin: 0.5rem;
+    background-color: transparent;
+    padding: 0.5rem;
+}
+
+#input image {
+    margin-right: 0.5rem;
+    color: @input-image;
+}
+
+#scroll {
+    border-top: 1px solid @scroll-border;
+}
+
+#inner-box {
+    padding: 0.5rem;
+}
+
+#entry {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#entry image {
+    margin-right: 0.75rem;
+}
+
+#entry:selected {
+    background-color: alpha(@entry-select-background, 0.8);
+    padding: 0.5rem;
+}

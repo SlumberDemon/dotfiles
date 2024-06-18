@@ -1,0 +1,13 @@
+#side-left {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8.01px;
+    padding: 6px;
+    background-color: alpha(@background, 0.8);
+}
+
+#side-left-container {
+    margin: 10px;
+    border: 2px;
+    border-radius: 8px;
+    /* background-color: alpha(@surface, 0.2); */
+}

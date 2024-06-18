@@ -1,0 +1,6 @@
+allow_images=true
+prompt=Search...
+image_size=24
+line_warp=word_charline_warp=word_char
+# gtk_dark=true
+# width=450

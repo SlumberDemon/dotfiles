@@ -1,21 +1,28 @@
-from imports import *
+import os
 
-from .globe import globe
-from .logo import logo
-from .pwcontainer import pwcontainer
-from .tlcontainer import tlcontainer
-from .workspaces import workspaces
-from .workspacescroll import workspacescroll
+from fabric.utils import bulk_connect, exec_shell_command
+from fabric.widgets import Box, Button
+
+from ._batteryindicator import indicator
+from ._datetime import datetime
+from ._globe import globe
+from ._logo import logo
+from ._minimap import minimap
+from ._profile import profile
+from ._workspace import workspace
+
+pwcontainer = Box(name="center-pwcontainer", children=[profile, workspace])
+tlcontainer = Box(name="center-tlcontainer", children=[datetime, indicator])
 
 
 class center(Box):
     def __init__(self):
         super().__init__(
-            name="center",
-            children=[pwcontainer, globe, tlcontainer, logo, workspacescroll],
+            name="bar-center",
+            children=[pwcontainer, globe, tlcontainer, logo, minimap],
         )
 
-        for connector in [globe, logo]:
+        for connector in [logo]:  # globe
             bulk_connect(
                 connector,
                 {
@@ -29,20 +36,5 @@ class center(Box):
         self, button: Button, event
     ):  # https://docs.gtk.org/gdk3/enum.EventType.html
         if event.button == 1 and event.type == 4:  # Single Click
-            if button.get_name() == "globe":
-                exec_shell_command("sofa full -r")
-            elif button.get_name() == "logo":
-                exec_shell_command("rofi -show drun")
-
-        """
-        # Doesn't allow for multiple events
-
-        elif event.button == 1 and event.type == 5:  # Double Click
-            if button.get_name() == "globe":
-                exec_shell_command("sofa color -m light")
-        elif event.button == 1 and event.type == 6:  # Triple Click
-            if button.get_name() == "globe":
-                exec_shell_command("sofa color -m dark")
-            elif button.get_name() == "logo":
-                exec_shell_command("systemctl suspend")
-        """
+            if button.get_name() == "center-logo":
+                exec_shell_command("wofi --show drun --fork")

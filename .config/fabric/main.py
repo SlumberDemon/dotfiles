@@ -1,20 +1,26 @@
 import fabric
-from imports import *
+from fabric.utils import get_relative_path, monitor_file, set_stylesheet_from_file
 from widgets.bar.main import statusBar
+from widgets.screencorners.main import leftCorners, rightCorners
+from widgets.sideleft.main import sideLeft
 
 
-def check_colors(*args):
-    return set_stylesheet_from_file(get_relative_path("css/main.css"))
+def check_css(*args):
+    return set_stylesheet_from_file("./css/main.css")
 
 
 monitor = monitor_file(
-    get_relative_path("./css/colors.css"), "none"
-)  # when developing do main.css else colors.css
-monitor.connect("changed", check_colors)
+    get_relative_path("./css/_sideleft.css"), "none"
+)  # change to main.css when developing
+monitor.connect("changed", check_css)
 
 if __name__ == "__main__":
     bar = statusBar()
+    corners = leftCorners(), rightCorners()
+    sideLeft = sideLeft()
 
-    set_stylesheet_from_file(get_relative_path("./css/main.css"))
+    sideLeft.hide()
+
+    set_stylesheet_from_file("./css/main.css")
 
     fabric.start()

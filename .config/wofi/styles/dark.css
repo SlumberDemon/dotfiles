@@ -1,0 +1,12 @@
+@import url('./neutral.css');
+
+@define-color all @neutral-50;
+
+@define-color window @neutral-900;
+@define-color window-border @neutral-700;
+
+@define-color input-image @neutral-500;
+
+@define-color scroll-border @neutral-700;
+
+@define-color entry-select-background @neutral-800;

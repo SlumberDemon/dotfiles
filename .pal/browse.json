@@ -1,0 +1,32 @@
+{
+  "engines": [
+    {
+      "name": "duckduckgo",
+      "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+      "name": "perplexity",
+      "url": "https://www.perplexity.ai/?q=%s"
+    },
+    {
+      "name": "aur",
+      "url": "https://archlinux.org/packages/?q=%s"
+    },
+    {
+      "name": "urban",
+      "url": "http://www.urbandictionary.com/define.php?term=%s"
+    },
+    {
+      "name": "pypi",
+      "url": "https://pypi.org/search/?q=%s"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/results?search_query=%s"
+    }
+  ],
+  "default": {
+    "name": "duckduckgo",
+    "url": "https://duckduckgo.com/?q=%s"
+  }
+}

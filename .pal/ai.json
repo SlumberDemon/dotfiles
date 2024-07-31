@@ -1,0 +1,5 @@
+{
+  "model": "adrienbrault/gorilla-openfunctions-v2:Q4_K_M",
+  "host": "http://localhost:11434",
+  "trust_mode": true
+}

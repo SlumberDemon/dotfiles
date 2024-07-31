@@ -1,7 +1,6 @@
 #side-left {
     border: 2px solid alpha(@background, 0.2);
     border-radius: 8.01px;
-    padding: 6px;
     background-color: alpha(@background, 0.8);
 }
 
@@ -9,5 +8,45 @@
     margin: 10px;
     border: 2px;
     border-radius: 8px;
-    /* background-color: alpha(@surface, 0.2); */
+}
+
+#left-player {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 6px;
+}
+
+#left-player-art {
+    padding: 64px;
+    background-size: cover;
+    background-color: alpha(@background-secondary, 0.2);
+    border-radius: 6px;
+    margin: 8px;
+}
+
+#left-player-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: @font;
+}
+
+#left-player-artist {
+    font-weight: 300;
+    font-size: 16px;
+    color: @font;
+}
+
+#left-player-info {
+    margin: 16px;
+}
+
+#left-player-controls {
+    margin-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#floating-player {
+    background-color: #ff0000;
+    padding: 60px;
 }

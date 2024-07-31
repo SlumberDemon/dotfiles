@@ -6,7 +6,7 @@ from fabric.utils import bulk_connect
 from fabric.utils.fabricator import Fabricator
 from fabric.widgets import Box, Button, Label, Revealer
 
-battery_info = Fabricator(
+batteryInfo = Fabricator(
     poll_from=lambda: {
         "battery": int(
             psutil.sensors_battery().percent
@@ -27,7 +27,7 @@ battery_info = Fabricator(
     interval=1000,
 )
 
-battery_info.connect(
+batteryInfo.connect(
     "changed",
     lambda _, value: (
         details.set_label(

@@ -6,11 +6,11 @@ from widgets.sideleft.main import sideLeft
 
 
 def check_css(*args):
-    return set_stylesheet_from_file("./css/main.css")
+    return set_stylesheet_from_file("css/main.css")
 
 
 monitor = monitor_file(
-    get_relative_path("./css/_sideleft.css"), "none"
+    get_relative_path("css/color.css"), "none"
 )  # change to main.css when developing
 monitor.connect("changed", check_css)
 
@@ -21,6 +21,6 @@ if __name__ == "__main__":
 
     sideLeft.hide()
 
-    set_stylesheet_from_file("./css/main.css")
+    set_stylesheet_from_file("css/main.css")
 
     fabric.start()

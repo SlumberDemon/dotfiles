@@ -1,4 +1,6 @@
-from fabric.widgets import WaylandWindow, CenterBox, Label
+from fabric.widgets import CenterBox, Label, WaylandWindow
+
+from ._player import player
 
 
 class sideLeft(WaylandWindow):
@@ -11,7 +13,7 @@ class sideLeft(WaylandWindow):
             anchor="top bottom left",
             margin="4px 4px 4px 4px",
             exclusive=False,
-            visible=True,
+            visible=False,
             name="side-left",
             v_expand=True,
             h_expand=False,
@@ -19,6 +21,11 @@ class sideLeft(WaylandWindow):
 
         self.main = CenterBox(name="side-left-container", size=450)
 
-        self.main.add_center(Label("hi"))
+        self.player = player()
+
+        self.main.add(self.player)
 
         self.add(self.main)
+
+    def toggle(self):
+        self.set_visible(not self.is_visible())

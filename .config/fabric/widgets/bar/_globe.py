@@ -1,3 +1,3 @@
-from fabric.widgets import Button
+from imports import *
 
-globe = Button(name="center-globe", label="🌍")
+globe = Button(name="globe", label="🌍")

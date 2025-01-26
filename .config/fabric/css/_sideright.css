@@ -1,0 +1,31 @@
+#side-right {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8.01px;
+    background-color: alpha(@background, 0.8);
+}
+
+#side-right-container {
+    margin: 10px;
+    border: 2px;
+    border-radius: 8px;
+}
+
+#quicksettings-container button {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8px;
+    padding: 16px 38px 16px;
+    margin: 2px;
+}
+
+#quicksettings-container button.active {
+    background-color: @background-alternate;
+    color: @font-secondary;
+}
+
+#settings-icon {
+    font-family: tabler-icons;
+    font-weight: normal;
+    font-size: 24px;
+    color: @font;
+}

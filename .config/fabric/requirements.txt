@@ -1,0 +1,3 @@
+psutil
+git+https://github.com/Fabric-Development/fabric
+python-dotenv

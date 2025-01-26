@@ -1,5 +1,4 @@
-from fabric.widgets import Box, CenterBox, WaylandWindow
-from fabric.widgets.shapes import Corner
+from imports import *
 
 
 class leftCorners(WaylandWindow):
@@ -9,7 +8,7 @@ class leftCorners(WaylandWindow):
         super().__init__(
             title="corners-left",
             layer="overlay",
-            exclusive=False,
+            exclusivity="none",
             anchor="left top bottom",
             margin="0px 0px -51px 0px",
         )

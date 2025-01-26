@@ -1,0 +1,32 @@
+#notification {
+    padding: 8px;
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8.01px;
+    background-color: alpha(@background, 0.8);
+}
+
+#notification .summary {
+    font-size: 20px;
+    font-weight: bold;
+    color: @font;
+}
+
+#notification .body {
+    color: @font-secondary;
+    font-weight: normal;
+}
+
+#notification-button {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#notification-close {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8px;
+    padding: 2px;
+    margin-left: 8px;
+}

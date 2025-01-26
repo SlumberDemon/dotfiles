@@ -1,8 +1,7 @@
 import json
 import time
 
-from fabric.hyprland.service import Hyprland
-from fabric.widgets import Box, EventBox
+from imports import *
 
 connection = Hyprland()
 
@@ -32,6 +31,6 @@ on_scroll.scroll_value = 0
 
 
 scrollBox = Box(name="center-minimap")
-minimap = EventBox(events="smooth-scroll", children=scrollBox)
+minimap = EventBox(events="smooth-scroll", child=scrollBox)
 
 minimap.connect("scroll-event", on_scroll)

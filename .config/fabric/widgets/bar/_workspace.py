@@ -1,7 +1,6 @@
 import json
 
-from fabric.hyprland.service import Hyprland
-from fabric.widgets import Label
+from imports import *
 
 connection = Hyprland()
 
@@ -16,4 +15,4 @@ def on_workspace(obj, signal):
     workspace.set_label(f"Workspace {activeWorkspace}")
 
 
-connection.connect("workspace", on_workspace)
+connection.connect("event::workspace", on_workspace)

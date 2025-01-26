@@ -1,11 +1,10 @@
-from fabric.utils import get_relative_path
-from fabric.widgets import Button, Svg
+from imports import *
 
 logo = Button(
-    name="center-logo",
+    name="logo",
     child=Svg(
         size=20,
-        svg_file=get_relative_path("../../assets/deta-symbolic.svg"),
-        # style="fill: #1793D1;",
+        svg_file=get_relative_path("../../assets/fabric-symbolic.svg"),
+        style="fill: #3D9A6F;",
     ),
 )

@@ -1,7 +1,0 @@
-@import url("./neutral.css");
-
-@define-color background @neutral-50;
-@define-color background-secondary @neutral-100;
-@define-color background-tertiary @neutral-200;
-
-@define-color font @neutral-800;

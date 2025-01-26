@@ -42,11 +42,123 @@
 
 #left-player-controls {
     margin-top: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0px 8px 0px 8px;
+}
+
+#left-player-icon {
+    font-family: tabler-icons;
+    font-weight: normal;
+    font-size: 30px;
+    color: @font;
 }
 
 #floating-player {
-    background-color: #ff0000;
-    padding: 60px;
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8px;
+    background-color: alpha(@background, 0.8);
+}
+
+#floating-art {
+    padding: 64px;
+    background-size: cover;
+    background-color: alpha(@background-secondary, 0.2);
+    border-radius: 6px;
+    margin: 8px;
+}
+
+#floating-controls {
+    margin: 0px 12px 0px;
+}
+
+#left-sysinfo {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+#left-sysinfo-box:nth-child(1) {
+    margin-right: 8px;
+}
+
+#left-sysinfo-box:nth-child(2),
+#left-sysinfo-box:nth-child(3) {
+    margin: 0px 8px 0px 8px;
+}
+
+#left-sysinfo-box:nth-child(4) {
+    margin-left: 8px;
+}
+
+#left-sysinfo-circular {
+    color: alpha(@background-secondary, 0.2);
+    border: solid 8px @font;
+}
+
+#left-sysinfo-icon {
+    font-family: tabler-icons;
+    font-weight: normal;
+    font-size: 24px;
+    color: @font;
+}
+
+#left-weather {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+#weather-temperature {
+    font-weight: bold;
+    font-size: 60px;
+    color: @font;
+    padding: 20px;
+}
+
+#weather-condition {
+    font-size: 24px;
+    padding-bottom: 4px;
+    color: @font;
+}
+
+#weather-location {
+    font-size: 12px;
+    color: @font;
+    margin-right: 4px;
+}
+
+#weather-time {
+    font-size: 12px;
+    color: @font;
+    margin-left: 4px;
+}
+
+#weather-icon {
+    background-size: cover;
+    border-radius: 6px;
+    padding: 48px;
+    margin: 8px;
+}
+
+#left-volume {
+    background-color: alpha(@background, 0.6);
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 4px;
+}
+
+#volume-label {
+    font-size: 16px;
+    margin-left: 8px;
+    color: @font;
+}
+
+#volume-slider {
+    padding: 12px;
+    background-color: alpha(@background-secondary, 0.2);
+    border-radius: 32px;
+    margin: 8px;
 }

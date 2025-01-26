@@ -1,0 +1,67 @@
+#launcher {
+    border: 2px solid alpha(@background, 0.2);
+    border-radius: 8px;
+    background-color: alpha(@background, 0.8);
+    color: @font;
+    padding: 6px;
+}
+
+#launcher-search {
+    padding: 16px;
+    font-size: 14px;
+}
+
+#launcher-apps {
+    font-size: 13px;
+    padding: 8px 8px 0px 8px;
+}
+
+#launcher-area {
+    border: 1px solid alpha(@background, 0.2);
+    background-color: alpha(@background, 0.2);
+}
+
+#launcher-details {
+    background-color: alpha(@background, 0.4);
+    border-top: 1px solid alpha(@background, 0.2);
+    padding: 8px 12px 8px 12px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#launcher-details-label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#launcher-details-icon {
+    background-color: @background-tertiary;
+    border-radius: 4px;
+    padding: 4px;
+    color: @font;
+}
+
+#launcher-app {
+    border-radius: 12px;
+}
+
+#launcher-app:hover {
+    background-color: alpha(@background-secondary, 0.2);
+}
+
+#launcher-app:focus {
+    background-color: alpha(@background-secondary, 0.4);
+}
+
+#launcher-app:nth-child(1) {
+    margin-top: 0px;
+}
+
+#launcher-app-icon {
+    margin: 8px;
+}
+
+#launcher-app-label {
+    color: @font-secondary;
+    margin-right: 8px;
+}

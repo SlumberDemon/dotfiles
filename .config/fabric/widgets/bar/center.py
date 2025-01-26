@@ -1,7 +1,4 @@
-import os
-
-from fabric.utils import bulk_connect, exec_shell_command
-from fabric.widgets import Box, Button
+from imports import *
 
 from ._batteryindicator import indicator
 from ._datetime import datetime
@@ -11,23 +8,26 @@ from ._minimap import minimap
 from ._profile import profile
 from ._workspace import workspace
 
-pwcontainer = Box(name="center-pwcontainer", children=[profile, workspace])
-tlcontainer = Box(name="center-tlcontainer", children=[datetime, indicator])
-
 
 class center(Box):
-    def __init__(self):
+    def __init__(self, **kwargs) -> None:
         super().__init__(
-            name="bar-center",
-            children=[pwcontainer, globe, tlcontainer, logo, minimap],
+            name="center",
+            children=[
+                Box(name="pwcontainer", children=[profile, workspace]),
+                globe,
+                Box(name="tlcontainer", children=[datetime, indicator]),
+                logo,
+                minimap,
+            ],
         )
 
         for connector in [logo]:  # globe
             bulk_connect(
                 connector,
                 {
-                    "enter-notify-event": lambda *args: self.change_cursor("pointer"),
-                    "leave-notify-event": lambda *args: self.change_cursor("default"),
+                    "enter-notify-event": lambda *args: self.set_cursor("pointer"),
+                    "leave-notify-event": lambda *args: self.set_cursor("default"),
                     "button-press-event": self.on_button_press,
                 },
             )
@@ -38,3 +38,4 @@ class center(Box):
         if event.button == 1 and event.type == 4:  # Single Click
             if button.get_name() == "center-logo":
                 exec_shell_command("wofi --show drun --fork")
+                # switch it to fabricast

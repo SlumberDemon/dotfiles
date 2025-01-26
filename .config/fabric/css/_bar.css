@@ -1,4 +1,4 @@
-#bar-center {
+#center {
     border: 2px solid alpha(@background, 0.2);
     border-radius: 10px;
     padding: 6px;
@@ -6,32 +6,32 @@
     color: @font;
 }
 
-#center-datetime {
+#datetime {
     font-size: 16px;
 }
 
-#center-indicator {
+#indicator {
     border-radius: 100%;
     min-width: 6px;
     min-height: 6px;
     margin: 8px 3px 8px 6px;
 }
 
-#center-tlcontainer {
+#tlcontainer {
     margin: 0px 3px 0px 3px;
     background-color: alpha(@background-secondary, 0.2);
     padding: 4px 9px 4px 9px;
     border-radius: 6px;
 }
 
-#center-globe {
+#globe {
     margin: 0px 3px 0px 3px;
     background-color: alpha(@background-secondary, 0.2);
     padding: 4px 9px 4px 9px;
     border-radius: 6px;
 }
 
-#center-logo {
+#logo {
     margin: 0px 3px 0px 3px;
     background-color: alpha(@background-secondary, 0.2);
     padding: 5px 9px 5px 9px;
@@ -49,7 +49,7 @@
     margin-left: 4px;
 }
 
-#center-pwcontainer {
+#pwcontainer {
     margin-right: 3px;
     background-color: alpha(@background-secondary, 0.2);
     padding: 0px 8px 0px 0px;

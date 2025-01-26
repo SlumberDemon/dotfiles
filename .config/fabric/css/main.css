@@ -1,8 +1,11 @@
-@import url("./css/_bar.css");
-@import url("./css/color.css");
-@import url("./css/_screencorners.css");
-@import url("./css/_sideleft.css");
-@import url("./css/extra.css");
+@import url("_bar.css");
+@import url("_launcher.css");
+@import url("color.css");
+@import url("_screencorners.css");
+@import url("_sideleft.css");
+@import url("_sideright.css");
+@import url("extra.css");
+@import url("_notifications.css");
 
 * {
     all: unset;

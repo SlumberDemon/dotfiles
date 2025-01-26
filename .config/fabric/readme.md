@@ -116,6 +116,7 @@ watchfiles "python3 main.py" .
 - Side panels
 - Side menus
 - App launcher
+- Screen corners
 
 ## Todo
 

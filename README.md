@@ -4,8 +4,15 @@
 
 ![showcase](screenshots/image-1.png)
 > Bar and side panels open
+
 ![showcase](screenshots/image-2.png)
 > Bar with side panels hidden and notification
+
+![showcase](screenshots/image-3.png)
+> Side menus
+
+![showcase](screenshots/image-4.png)
+> fabricast, application launcher
 
 <table align="center">
    <tr>
